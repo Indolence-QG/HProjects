@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="lib-master/theme-chalk/index.css"/>
+</head>
+<body>
+  <div id="app" >
+    <form>
+    <el-button @click="visible = true">Button</el-button>
+    <el-input v-model="username" placeholder="请输入内容"></el-input>
+     <el-input v-model="password" placeholder="请输入内容"></el-input>
+    <el-dialog :visible.sync="visible" title="Hello world">
+      <p>Try Element</p>
+    </el-dialog>
+    </form>
+      </div>
+</body>
+<script src="vue.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="lib-master/index.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return { visible: false,
+        username:'',
+        password:''
+                
+        
+        }
+        methods :{
+          login:function{
+            console.
+          }
+        }
+      }
+    })
+  </script></html>
